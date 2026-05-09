@@ -21,3 +21,75 @@ body {
   color: var(--text-color);
   background: var(--bg-color);
 }
+/* ------------------ Header ------------------ */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  padding: 17px 11%;
+  border-bottom: 1px solid #f7f9fb;
+  transition: all 0.3s ease;
+}
+
+.logo img {
+  width: 120px;
+  height: auto;
+}
+
+.header__navbar {
+  display: flex;
+}
+
+.header__navbarLink {
+  font-size: var(--p-font);
+  color: var(--other-color);
+  font-weight: 400;
+  padding: 10px 25px;
+  margin: 0 5px;
+  background: transparent;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.header__navbarLink:hover,
+.active {
+  background: #c3e1ff;
+}
+
+.header__icons {
+  display: flex;
+  align-items: center;
+}
+
+.header__icons i {
+  width: 50px;
+  height: 50px;
+  background: #c3e1ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  color: var(--other-color);
+  font-size: 22px;
+  margin-right: 25px;
+  margin-left: 10px;
+  transition: all 0.3s ease;
+}
+
+.header__icons i:hover {
+  transform: scale(0.9);
+}
+
+#menu-icon {
+  display: none;
+  color: var(--other-color);
+  font-size: 33px;
+  z-index: 1001;
+  cursor: pointer;
+}
