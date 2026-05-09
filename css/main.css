@@ -149,14 +149,14 @@ header.sticky {
   height: auto;
 }
 
-/* ------------------ Home ------------------ */
-.feature__middleText h2 {
+/* ------------------ Feature ------------------ */
+.middle-text h2 {
   font-size: var(--h2-font);
   color: var(--text-color);
   font-weight: 600;
 }
 
-.feature__middleText span {
+.middle-text span {
   color: var(--main-color);
 }
 
@@ -229,4 +229,91 @@ header.sticky {
   height: 170px;
   max-width: 100%;
   object-fit: cover;
+}
+
+/* ------------------ Product ------------------ */
+.product__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  gap: 2rem;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.box {
+  position: relative;
+}
+
+.box-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  margin-bottom: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.box h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  line-height: 1.1;
+}
+
+.box h4 {
+  font-size: var(--p-font);
+  color: var(--other-color);
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.inbox {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.price {
+  display: inline-block;
+  padding: 4px 16px;
+  background: transparent;
+  border: 2px solid tomato;
+  color: tomato;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.price:hover {
+  letter-spacing: 1px;
+}
+
+.rating a {
+  font-size: 19px;
+  color: tomato;
+  margin-right: 4px;
+}
+
+.heart i {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  display: inline-flex;
+  top: 20px;
+  right: 25px;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-color);
+  color: tomato;
+  font-size: 22px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.heart i:hover {
+  background: tomato;
+  color: var(--bg-color);
 }
