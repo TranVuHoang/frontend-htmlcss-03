@@ -357,3 +357,37 @@ header.sticky {
   font-weight: 500;
   margin-bottom: 2.5rem;
 }
+
+/* ------------------ Contact ------------------ */
+.contact {
+  padding: 90px 11% 40px;
+}
+
+.contact__main {
+  display: grid;
+  gap: 2rem;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+}
+
+.contact__content h5 {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.contact__content li {
+  margin-bottom: 12px;
+}
+
+.contact__content li a {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 400;
+  color: #374151;
+  transition: all 0.3s ease;
+}
+
+.contact__content li a:hover {
+  color: var(--text-color);
+  transform: translateX(-5px);
+}
